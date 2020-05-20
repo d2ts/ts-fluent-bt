@@ -5,6 +5,14 @@ import {NodeState} from '@/enums/node-state.enum'
 export default abstract class Decorator<T> extends ParentNode<T> {
   protected child!: Node<T>
 
+  constructor(child?: Node<T>) {
+    super()
+
+    if (child) {
+      this.child = child
+    }
+  }
+
   public registerChild(child: Node<T>): ParentNode<T> {
     if (this.child) {
       throw new RangeError('Decorators can register only one child node.')

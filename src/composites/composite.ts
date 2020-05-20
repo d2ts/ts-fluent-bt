@@ -6,6 +6,14 @@ export default abstract class Composite<T> extends ParentNode<T> {
   private readonly children: Node<T>[] = []
   private currentChildIndex = 0
 
+  constructor(children?: Node<T>[]) {
+    super()
+
+    if (children) {
+      this.children = children
+    }
+  }
+
   public tick(blackBoard: T): NodeState {
     for (
       ;
