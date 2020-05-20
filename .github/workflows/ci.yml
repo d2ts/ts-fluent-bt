@@ -5,3 +5,27 @@ on:
     branches:
       - master
       - dev
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: use nodejs
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: install
+        run: npm ci
+      - name: lint commits
+        uses: wagoid/commitlint-github-action@v1
+      - name: lint
+        run: npm run lint:check
+      - name: build
+        run: npm run build
+      - name: test
+        run: npm run test
