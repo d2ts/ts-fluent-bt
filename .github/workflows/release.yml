@@ -23,7 +23,7 @@ jobs:
           node-version: 12
           registry-url: https://registry.npmjs.org
       - name: install
-        run: npm ci
+        run: npm install
       - name: release
         run: npx semantic-release
         env:
