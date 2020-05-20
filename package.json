@@ -1,6 +1,6 @@
 {
   "name": "@d2ts/ts-fluent-bt",
-  "version": "0.0.0-semantic-release-managed",
+  "version": "0.0.0-development",
   "description": "Fluent TypeScript behaviour tree library.",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
@@ -10,7 +10,8 @@
     "build": "npm run compile",
     "compile": "tsc",
     "commit": "commit",
-    "test": "jest"
+    "test": "jest",
+    "semantic-release": "semantic-release"
   },
   "author": "d2ts",
   "repository": {
