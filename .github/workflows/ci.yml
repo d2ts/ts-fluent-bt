@@ -5,3 +5,21 @@ on:
     branches:
       - master
       - dev
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: use nodejs
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: install
+        run: npm ci
+      - name: lint
+        run: npm run lint
+      - name: build
+        run: npm run build
+      - name: test
+        run: npm run test
