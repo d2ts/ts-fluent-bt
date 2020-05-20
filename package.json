@@ -6,7 +6,8 @@
   "types": "./lib/index.d.ts",
   "scripts": {
     "lint": "eslint '**/*.{ts,js}' --fix",
-    "build": "",
+    "lint:check": "eslint '**/*.{ts,js}'",
+    "build": "npm run compile",
     "compile": "tsc",
     "commit": "commit",
     "test": "jest"
