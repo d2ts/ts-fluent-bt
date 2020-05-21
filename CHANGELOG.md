@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/d2ts/ts-fluent-bt/compare/v1.1.1...v1.2.0) (2020-05-21)
+
+
+### Features
+
+* **builder:** add the ability to build nodes fluently ([cb99b4d](https://github.com/d2ts/ts-fluent-bt/commit/cb99b4dabe811f0c2eb13ec41b3d8cd4ce33d610))
+
 ## [1.1.1](https://github.com/d2ts/ts-fluent-bt/compare/v1.1.0...v1.1.1) (2020-05-21)
 
 
