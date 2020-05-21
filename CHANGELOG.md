@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/d2ts/ts-fluent-bt/compare/v1.2.0...v1.3.0) (2020-05-21)
+
+
+### Features
+
+* **builder:** add ability to insert a subtree into a tree ([5c77072](https://github.com/d2ts/ts-fluent-bt/commit/5c770729bb262c255078b505660d234c0e427622))
+
 # [1.2.0](https://github.com/d2ts/ts-fluent-bt/compare/v1.1.1...v1.2.0) (2020-05-21)
 
 
