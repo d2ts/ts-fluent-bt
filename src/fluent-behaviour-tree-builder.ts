@@ -55,6 +55,10 @@ export class FluentBehaviourTreeBuilder<T> {
     return this
   }
 
+  public insert(subTree: Node<T>): FluentBehaviourTreeBuilder<T> {
+    return this.registerChild(subTree)
+  }
+
   public build(): Node<T> {
     if (!this.currentParentNode) {
       throw new ReferenceError(

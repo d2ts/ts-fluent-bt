@@ -53,4 +53,26 @@ describe('FluentBehaviourTreeBuilder', () => {
     expect(mockCondition).toBeCalled()
     expect(mockAction).toBeCalled()
   })
+
+  it('should execute a inserted subtree', () => {
+    const builder = createBuilder()
+    const mockCondition = jest.fn()
+    const mockAction = jest.fn()
+
+    mockCondition.mockReturnValue(false)
+    mockAction.mockReturnValue(NodeState.Running)
+
+    const subTree = builder
+      .selector()
+      .condition(mockCondition)
+      .action(mockAction)
+      .end()
+      .build()
+    const tree = builder.sequence().insert(subTree).end().build()
+
+    tree.tick(testBlackboard)
+
+    expect(mockCondition).toBeCalled()
+    expect(mockAction).toBeCalled()
+  })
 })
