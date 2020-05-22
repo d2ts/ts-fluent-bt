@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/d2ts/ts-fluent-bt/compare/v1.3.0...v1.4.0) (2020-05-22)
+
+
+### Features
+
+* **decorator:** add guard decorator ([23f8347](https://github.com/d2ts/ts-fluent-bt/commit/23f834707cf5a388575e107d19e42c5e239769e8))
+
 # [1.3.0](https://github.com/d2ts/ts-fluent-bt/compare/v1.2.0...v1.3.0) (2020-05-21)
 
 
