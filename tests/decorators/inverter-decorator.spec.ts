@@ -1,4 +1,4 @@
-import {InverterDecorator} from '@/decorators/inverter-decorator'
+import {InverterDecorator} from '@/decorators'
 import {ActionLeaf} from '@/leafs'
 import {NodeState} from '@/enums'
 import {testBlackboard} from '@test/test-blackboard'
