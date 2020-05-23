@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.5.1](https://github.com/d2ts/ts-fluent-bt/compare/v1.5.0...v1.5.1) (2020-05-23)
+
+
+### Bug Fixes
+
+* **decorator:** fix logic for succeeder decorator ([8b0f0af](https://github.com/d2ts/ts-fluent-bt/commit/8b0f0af9f55bddc8c4fbd8609112b76f2f5aa36e))
+
 # [1.5.0](https://github.com/d2ts/ts-fluent-bt/compare/v1.4.0...v1.5.0) (2020-05-23)
 
 
