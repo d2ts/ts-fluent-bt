@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.7.0](https://github.com/d2ts/ts-fluent-bt/compare/v1.6.0...v1.7.0) (2020-05-23)
+
+
+### Features
+
+* **decorator:** add repeat decorator ([f30cec5](https://github.com/d2ts/ts-fluent-bt/commit/f30cec56fcfdea57aa4593b19d1b4de190933e69))
+* **decorator:** add retry decorator ([b2674c4](https://github.com/d2ts/ts-fluent-bt/commit/b2674c441694f0df58adb1634316f782ac43952b))
+
 # [1.6.0](https://github.com/d2ts/ts-fluent-bt/compare/v1.5.1...v1.6.0) (2020-05-23)
 
 
