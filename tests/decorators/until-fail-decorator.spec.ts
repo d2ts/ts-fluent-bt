@@ -1,4 +1,4 @@
-import {UntilFailDecorator} from '@/decorators/until-fail-decorator'
+import {UntilFailDecorator} from '@/decorators'
 import {ActionLeaf} from '@/leafs'
 import {NodeState} from '@/enums'
 import {testBlackboard} from '@test/test-blackboard'

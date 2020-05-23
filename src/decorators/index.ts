@@ -1,3 +1,5 @@
 export * from './succeeder-decorator'
 export * from './inverter-decorator'
 export * from './guard-decorator'
+export * from './until-fail-decorator'
+export * from './until-success-decorator'
