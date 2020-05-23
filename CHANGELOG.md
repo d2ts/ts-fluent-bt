@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.6.0](https://github.com/d2ts/ts-fluent-bt/compare/v1.5.1...v1.6.0) (2020-05-23)
+
+
+### Features
+
+* **decorator:** add until-success decorator ([66f9ee2](https://github.com/d2ts/ts-fluent-bt/commit/66f9ee20d5b9fe9285966feaeca77e553d92b903))
+
 ## [1.5.1](https://github.com/d2ts/ts-fluent-bt/compare/v1.5.0...v1.5.1) (2020-05-23)
 
 
