@@ -3,8 +3,8 @@ import {NodeState} from '@/enums/node-state.enum'
 
 export class SucceederDecorator<T> extends Decorator<T> {
   public tick(blackBoard: T): NodeState {
-    super.tick(blackBoard)
+    const state = super.tick(blackBoard)
 
-    return NodeState.Succeeded
+    return state === NodeState.Running ? NodeState.Running : NodeState.Succeeded
   }
 }
