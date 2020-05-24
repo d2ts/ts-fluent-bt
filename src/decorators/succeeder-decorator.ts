@@ -1,5 +1,5 @@
-import Decorator from '@/decorators/decorator'
-import {NodeState} from '@/enums/node-state.enum'
+import Decorator from './decorator'
+import {NodeState} from '../enums'
 
 export class SucceederDecorator<T> extends Decorator<T> {
   public tick(blackBoard: T): NodeState {

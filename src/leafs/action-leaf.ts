@@ -1,5 +1,5 @@
-import Leaf from '@/leafs/leaf'
-import {NodeState} from '@/enums/node-state.enum'
+import Leaf from './leaf'
+import {NodeState} from '../enums'
 
 export type ActionLeafTask<T> = (blackboard: T) => NodeState
 

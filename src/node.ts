@@ -1,4 +1,4 @@
-import {NodeState} from '@/enums/node-state.enum'
+import {NodeState} from './enums'
 
 export default abstract class Node<T> {
   public abstract tick(blackBoard: T): NodeState
