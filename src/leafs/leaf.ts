@@ -11,7 +11,7 @@ export default abstract class Leaf<T, U> extends Node<T> {
     }
   }
 
-  public registerTask(task: (blackboard: T) => U): Node<T> {
+  public registerTask(task: (blackboard: T) => U): Leaf<T, U> {
     this.task = task
 
     return this

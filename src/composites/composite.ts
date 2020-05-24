@@ -34,7 +34,7 @@ export default abstract class Composite<T> extends ParentNode<T> {
     return this.defaultResult
   }
 
-  public registerChild(child: Node<T>): ParentNode<T> {
+  public registerChild(child: Node<T>): Composite<T> {
     this.children.push(child)
 
     return this
