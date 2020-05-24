@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.7.1](https://github.com/d2ts/ts-fluent-bt/compare/v1.7.0...v1.7.1) (2020-05-24)
+
+
+### Bug Fixes
+
+* use relative imports instead of path aliases ([4f7c41d](https://github.com/d2ts/ts-fluent-bt/commit/4f7c41d088a4f6775b323209ad71445c69b7f7b8))
+
 # [1.7.0](https://github.com/d2ts/ts-fluent-bt/compare/v1.6.0...v1.7.0) (2020-05-23)
 
 
