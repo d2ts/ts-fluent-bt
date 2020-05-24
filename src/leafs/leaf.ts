@@ -1,4 +1,4 @@
-import Node from '@/node'
+import Node from '../node'
 
 export default abstract class Leaf<T, U> extends Node<T> {
   protected task!: (blackboard: T) => U

@@ -1,12 +1,12 @@
-import ParentNode from '@/parent-node'
-import Node from '@/node'
-import {SelectorComposite, SequenceComposite} from '@/composites'
+import ParentNode from './parent-node'
+import Node from './node'
+import {SelectorComposite, SequenceComposite} from './composites'
 import {
   ActionLeaf,
   ActionLeafTask,
   ConditionLeaf,
   ConditionLeafTask,
-} from '@/leafs'
+} from './leafs'
 
 export class FluentBehaviourTreeBuilder<T> {
   // Needs to be a union with undefined due to the Array.pop method.

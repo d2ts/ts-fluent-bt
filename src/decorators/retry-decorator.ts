@@ -1,6 +1,6 @@
-import Decorator from '@/decorators/decorator'
-import Node from '@/node'
-import {NodeState} from '@/enums'
+import Decorator from './decorator'
+import Node from '../node'
+import {NodeState} from '../enums'
 
 export class RetryDecorator<T> extends Decorator<T> {
   public static RETRY_INFINITE = -1

@@ -1,6 +1,6 @@
-import Decorator from '@/decorators/decorator'
-import {NodeState} from '@/enums'
-import Node from '@/node'
+import Decorator from './decorator'
+import {NodeState} from '../enums'
+import Node from '../node'
 
 export class RepeatDecorator<T> extends Decorator<T> {
   public static REPEAT_INFINITE = -1
