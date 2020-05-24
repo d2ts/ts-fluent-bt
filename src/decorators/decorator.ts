@@ -13,7 +13,7 @@ export default abstract class Decorator<T> extends ParentNode<T> {
     }
   }
 
-  public registerChild(child: Node<T>): ParentNode<T> {
+  public registerChild(child: Node<T>): Decorator<T> {
     if (this.child) {
       throw new RangeError('Decorators can register only one child node.')
     }
