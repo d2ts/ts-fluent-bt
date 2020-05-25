@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.7.4](https://github.com/d2ts/ts-fluent-bt/compare/v1.7.3...v1.7.4) (2020-05-25)
+
+
+### Bug Fixes
+
+* dont export default so we can use export * from syntax ([bd48fd9](https://github.com/d2ts/ts-fluent-bt/commit/bd48fd9b0b80360a52c188f1ecd27f4ec18d5fc3))
+
 ## [1.7.3](https://github.com/d2ts/ts-fluent-bt/compare/v1.7.2...v1.7.3) (2020-05-25)
 
 
