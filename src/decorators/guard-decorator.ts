@@ -1,5 +1,5 @@
 import Decorator from './decorator'
-import Node from '../node'
+import {Node} from '../node'
 import {NodeState} from '../enums'
 
 export class GuardDecorator<T> extends Decorator<T> {

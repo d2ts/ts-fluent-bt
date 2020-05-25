@@ -1,5 +1,5 @@
 import ParentNode from '../parent-node'
-import Node from '../node'
+import {Node} from '../node'
 import {NodeState} from '../enums'
 
 export default abstract class Composite<T> extends ParentNode<T> {
