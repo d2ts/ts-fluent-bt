@@ -1,5 +1,5 @@
 import ParentNode from './parent-node'
-import Node from './node'
+import {Node} from './node'
 import {SelectorComposite, SequenceComposite} from './composites'
 import {
   ActionLeaf,
