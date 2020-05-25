@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.7.3](https://github.com/d2ts/ts-fluent-bt/compare/v1.7.2...v1.7.3) (2020-05-25)
+
+
+### Bug Fixes
+
+* export node class from library ([30968d2](https://github.com/d2ts/ts-fluent-bt/commit/30968d2711cf1325e4ed823f11015bf52e1c67c7))
+
 ## [1.7.2](https://github.com/d2ts/ts-fluent-bt/compare/v1.7.1...v1.7.2) (2020-05-24)
 
 
