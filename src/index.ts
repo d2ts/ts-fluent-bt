@@ -1,3 +1,5 @@
+import 'module-alias/register'
+
 export * from './fluent-behaviour-tree-builder'
 export * from './node'
 export * from './leafs'

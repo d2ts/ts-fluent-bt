@@ -19,6 +19,9 @@
     "url": "https://github.com/d2ts/ts-fluent-bt.git"
   },
   "license": "ISC",
+  "_moduleAliases": {
+    "@": "lib"
+  },
   "files": [
     "/lib"
   ],
@@ -38,6 +41,7 @@
     "jest": "^26.0.1",
     "jest-each": "^26.0.1",
     "lint-staged": "^10.2.4",
+    "module-resolver": "^1.0.0",
     "prettier": "^2.0.5",
     "semantic-release": "^17.0.7",
     "ts-jest": "^26.0.0",

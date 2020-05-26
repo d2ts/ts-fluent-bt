@@ -1,5 +1,5 @@
-import Composite from '../composites/composite'
-import {NodeState} from '../enums'
+import Composite from '@/composites/composite'
+import {NodeState} from '@/enums'
 
 export class SequenceComposite<T> extends Composite<T> {
   protected get defaultResult(): NodeState {
