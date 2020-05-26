@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.8.0](https://github.com/d2ts/ts-fluent-bt/compare/v1.7.4...v1.8.0) (2020-05-26)
+
+
+### Features
+
+* use module-resolver so we can still take advantage of path aliases ([3c517e7](https://github.com/d2ts/ts-fluent-bt/commit/3c517e7e1b2ca8b9ff218eafdcb1aa8f0915337e))
+
 ## [1.7.4](https://github.com/d2ts/ts-fluent-bt/compare/v1.7.3...v1.7.4) (2020-05-25)
 
 
