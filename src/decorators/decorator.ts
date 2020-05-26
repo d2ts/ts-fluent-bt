@@ -1,6 +1,6 @@
-import ParentNode from '../parent-node'
-import {Node} from '../node'
-import {NodeState} from '../enums'
+import ParentNode from '@/parent-node'
+import {Node} from '@/node'
+import {NodeState} from '@/enums'
 
 export default abstract class Decorator<T> extends ParentNode<T> {
   protected child!: Node<T>

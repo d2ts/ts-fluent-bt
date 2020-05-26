@@ -4,7 +4,12 @@
    "target": "es5",
    "strict": true,
    "lib": ["es5"],
-   "outDir": "./lib"
+   "outDir": "./lib",
+   "baseUrl": ".",
+   "paths": {
+     "@/*": ["./src/*"],
+     "@test/*": ["./tests/*"]
+   }
  },
  "include": ["src/**/*.ts"],
  "exclude": [

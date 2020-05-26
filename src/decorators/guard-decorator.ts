@@ -1,6 +1,6 @@
 import Decorator from './decorator'
-import {Node} from '../node'
-import {NodeState} from '../enums'
+import {Node} from '@/node'
+import {NodeState} from '@/enums'
 
 export class GuardDecorator<T> extends Decorator<T> {
   constructor(private predicate: (blackboard: T) => boolean, child?: Node<T>) {

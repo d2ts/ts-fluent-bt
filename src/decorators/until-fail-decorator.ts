@@ -1,5 +1,5 @@
 import Decorator from './decorator'
-import {NodeState} from '../enums'
+import {NodeState} from '@/enums'
 
 export class UntilFailDecorator<T> extends Decorator<T> {
   public tick(blackBoard: T): NodeState {
