@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.8.1](https://github.com/d2ts/ts-fluent-bt/compare/v1.8.0...v1.8.1) (2020-05-27)
+
+
+### Bug Fixes
+
+* **build:** add rollup and bundle library ([2c84216](https://github.com/d2ts/ts-fluent-bt/commit/2c842161375d7baac0fde1d7cfc8027cb7f476ff))
+
 # [1.8.0](https://github.com/d2ts/ts-fluent-bt/compare/v1.7.4...v1.8.0) (2020-05-26)
 
 
