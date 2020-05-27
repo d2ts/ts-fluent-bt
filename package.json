@@ -2,8 +2,8 @@
   "name": "@d2ts/ts-fluent-bt",
   "version": "1.8.0",
   "description": "Fluent TypeScript behaviour tree library.",
-  "main": "./lib/index.js",
-  "types": "./lib/index.d.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "lint": "eslint '**/*.{ts,js}' --fix",
     "lint:check": "eslint '**/*.{ts,js}'",
@@ -19,11 +19,8 @@
     "url": "https://github.com/d2ts/ts-fluent-bt.git"
   },
   "license": "ISC",
-  "_moduleAliases": {
-    "@": "lib"
-  },
   "files": [
-    "/lib"
+    "/dist"
   ],
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
@@ -41,10 +38,13 @@
     "jest": "^26.0.1",
     "jest-each": "^26.0.1",
     "lint-staged": "^10.2.4",
-    "module-resolver": "^1.0.0",
     "prettier": "^2.0.5",
+    "rollup": "^2.10.9",
+    "rollup-plugin-typescript2": "^0.27.1",
     "semantic-release": "^17.0.7",
     "ts-jest": "^26.0.0",
-    "typescript": "^3.9.2"
+    "ttypescript": "^1.5.10",
+    "typescript": "^3.9.2",
+    "typescript-transform-paths": "^1.1.14"
   }
 }
