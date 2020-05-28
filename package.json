@@ -8,7 +8,7 @@
     "lint": "eslint '**/*.{ts,js}' --fix",
     "lint:check": "eslint '**/*.{ts,js}'",
     "build": "npm run compile",
-    "compile": "tsc",
+    "compile": "rollup -c",
     "commit": "commit",
     "test": "jest",
     "semantic-release": "semantic-release"
