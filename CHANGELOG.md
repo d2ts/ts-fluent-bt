@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.8.3](https://github.com/d2ts/ts-fluent-bt/compare/v1.8.2...v1.8.3) (2020-05-29)
+
+
+### Bug Fixes
+
+* **composite:** fix composite out of bounds error ([6b96907](https://github.com/d2ts/ts-fluent-bt/commit/6b96907b24b5b4f9b90a613a4f3b6ea0a6e9e009))
+
 ## [1.8.2](https://github.com/d2ts/ts-fluent-bt/compare/v1.8.1...v1.8.2) (2020-05-28)
 
 
