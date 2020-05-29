@@ -29,7 +29,7 @@ export default abstract class Composite<T> extends ParentNode<T> {
       }
     }
 
-    this.currentChildIndex = -1
+    this.currentChildIndex = 0
 
     return this.defaultResult
   }
