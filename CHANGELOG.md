@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.8.4](https://github.com/d2ts/ts-fluent-bt/compare/v1.8.3...v1.8.4) (2020-05-31)
+
+
+### Bug Fixes
+
+* **composite:** fix child iteration in composite nodes ([345ec88](https://github.com/d2ts/ts-fluent-bt/commit/345ec88de6516e04e75d20f6200b5a9a3b4153ef))
+
 ## [1.8.3](https://github.com/d2ts/ts-fluent-bt/compare/v1.8.2...v1.8.3) (2020-05-29)
 
 
