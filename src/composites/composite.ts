@@ -22,8 +22,12 @@ export default abstract class Composite<T> extends ParentNode<T> {
     ) {
       const state = this.children[this.currentChildIndex].tick(blackBoard)
 
+      if (state === NodeState.Running) {
+        return state
+      }
+
       if (this.shouldReturnState(state)) {
-        this.currentChildIndex += 1
+        this.currentChildIndex = 0
 
         return state
       }
