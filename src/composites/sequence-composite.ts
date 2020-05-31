@@ -7,6 +7,6 @@ export class SequenceComposite<T> extends Composite<T> {
   }
 
   protected shouldReturnState(state: NodeState): boolean {
-    return state === NodeState.Failed || state === NodeState.Running
+    return state === NodeState.Failed
   }
 }

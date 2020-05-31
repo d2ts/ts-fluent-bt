@@ -7,6 +7,6 @@ export class SelectorComposite<T> extends Composite<T> {
   }
 
   protected shouldReturnState(state: NodeState): boolean {
-    return state == NodeState.Running || state == NodeState.Succeeded
+    return state == NodeState.Succeeded
   }
 }
