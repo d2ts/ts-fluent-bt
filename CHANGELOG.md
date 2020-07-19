@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.9.0](https://github.com/d2ts/ts-fluent-bt/compare/v1.8.4...v1.9.0) (2020-07-19)
+
+
+### Features
+
+* **composites:** create priority selector composite ([3bfe6e9](https://github.com/d2ts/ts-fluent-bt/commit/3bfe6e97170b4d19e30eba9649e55cbf643f86d3)), closes [/gamedev.stackexchange.com/questions/51693/difference-between-decision-trees-behavior-trees-for-game-ai/51722#51722](https://github.com//gamedev.stackexchange.com/questions/51693/difference-between-decision-trees-behavior-trees-for-game-ai/51722/issues/51722)
+
 ## [1.8.4](https://github.com/d2ts/ts-fluent-bt/compare/v1.8.3...v1.8.4) (2020-05-31)
 
 
