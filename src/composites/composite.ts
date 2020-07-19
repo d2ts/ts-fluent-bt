@@ -3,8 +3,8 @@ import {Node} from '@/node'
 import {NodeState} from '@/enums'
 
 export default abstract class Composite<T> extends ParentNode<T> {
-  private readonly children: Node<T>[] = []
-  private currentChildIndex = 0
+  protected readonly children: Node<T>[] = []
+  protected currentChildIndex = 0
 
   constructor(children?: Node<T>[]) {
     super()
@@ -27,13 +27,13 @@ export default abstract class Composite<T> extends ParentNode<T> {
       }
 
       if (this.shouldReturnState(state)) {
-        this.currentChildIndex = 0
+        this.reset()
 
         return state
       }
     }
 
-    this.currentChildIndex = 0
+    this.reset()
 
     return this.defaultResult
   }
@@ -42,6 +42,10 @@ export default abstract class Composite<T> extends ParentNode<T> {
     this.children.push(child)
 
     return this
+  }
+
+  protected reset() {
+    this.currentChildIndex = 0
   }
 
   protected abstract shouldReturnState(state: NodeState): boolean
