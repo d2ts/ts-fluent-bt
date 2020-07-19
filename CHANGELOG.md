@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.10.0](https://github.com/d2ts/ts-fluent-bt/compare/v1.9.0...v1.10.0) (2020-07-19)
+
+
+### Features
+
+* **builder:** add inverter nodes to fluent tree builder ([35eb96e](https://github.com/d2ts/ts-fluent-bt/commit/35eb96eb2d83f660e82dfd4e8e6cb3c8b9653fc7))
+
 # [1.9.0](https://github.com/d2ts/ts-fluent-bt/compare/v1.8.4...v1.9.0) (2020-07-19)
 
 
