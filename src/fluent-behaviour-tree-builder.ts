@@ -11,6 +11,7 @@ import {
   ConditionLeaf,
   ConditionLeafTask,
 } from '@/leafs'
+import {InverterDecorator} from '@/decorators'
 
 export class FluentBehaviourTreeBuilder<T> {
   // Needs to be a union with undefined due to the Array.pop method.
@@ -45,6 +46,10 @@ export class FluentBehaviourTreeBuilder<T> {
 
   public selector(): FluentBehaviourTreeBuilder<T> {
     return this.registerParent(new SelectorComposite())
+  }
+
+  public invert(child: Node<T>): FluentBehaviourTreeBuilder<T> {
+    return this.registerChild(new InverterDecorator(child))
   }
 
   public prioritySelector(): FluentBehaviourTreeBuilder<T> {

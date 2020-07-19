@@ -1,6 +1,7 @@
 import {FluentBehaviourTreeBuilder} from '@/fluent-behaviour-tree-builder'
 import {testBlackboard, TestBlackboard} from '@test/test-blackboard'
 import {NodeState} from '@/enums'
+import {ActionLeaf} from '@/leafs'
 
 describe('FluentBehaviourTreeBuilder', () => {
   const createBuilder = (): FluentBehaviourTreeBuilder<TestBlackboard> =>
@@ -52,6 +53,14 @@ describe('FluentBehaviourTreeBuilder', () => {
 
     expect(mockCondition).toBeCalled()
     expect(mockAction).toBeCalled()
+  })
+
+  it('should execute a inverter', () => {
+    const builder = createBuilder()
+    const actionNode = new ActionLeaf((blackboard) => NodeState.Succeeded)
+    const tree = builder.sequence().invert(actionNode).end().build()
+
+    expect(tree.tick(testBlackboard)).toBe(NodeState.Failed)
   })
 
   it('should execute a inserted subtree', () => {
