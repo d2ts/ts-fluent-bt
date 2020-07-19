@@ -1,6 +1,10 @@
 import ParentNode from '@/parent-node'
 import {Node} from '@/node'
-import {SelectorComposite, SequenceComposite} from '@/composites'
+import {
+  PrioritySelector,
+  SelectorComposite,
+  SequenceComposite,
+} from '@/composites'
 import {
   ActionLeaf,
   ActionLeafTask,
@@ -41,6 +45,10 @@ export class FluentBehaviourTreeBuilder<T> {
 
   public selector(): FluentBehaviourTreeBuilder<T> {
     return this.registerParent(new SelectorComposite())
+  }
+
+  public prioritySelector(): FluentBehaviourTreeBuilder<T> {
+    return this.registerParent(new PrioritySelector())
   }
 
   public end(): FluentBehaviourTreeBuilder<T> {
