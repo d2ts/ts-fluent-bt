@@ -44,7 +44,7 @@ export default abstract class Composite<T> extends ParentNode<T> {
     return this
   }
 
-  protected reset() {
+  protected reset(): void {
     this.currentChildIndex = 0
   }
 
