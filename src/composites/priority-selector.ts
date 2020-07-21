@@ -1,4 +1,4 @@
-import {SelectorComposite} from '@/composites/selector-composite'
+import {SelectorComposite} from '@/composites'
 import {NodeState} from '@/enums'
 
 /**
@@ -9,23 +9,6 @@ import {NodeState} from '@/enums'
 export class PrioritySelector<T> extends SelectorComposite<T> {
   public tick(blackBoard: T): NodeState {
     this.reset()
-
-    for (
-      ;
-      this.currentChildIndex < this.children.length;
-      this.currentChildIndex += 1
-    ) {
-      const state = this.children[this.currentChildIndex].tick(blackBoard)
-
-      if (state === NodeState.Running) {
-        return state
-      }
-
-      if (this.shouldReturnState(state)) {
-        return state
-      }
-    }
-
-    return this.defaultResult
+    return super.tick(blackBoard)
   }
 }
