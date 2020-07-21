@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.11.0](https://github.com/d2ts/ts-fluent-bt/compare/v1.10.0...v1.11.0) (2020-07-21)
+
+
+### Features
+
+* **composites:** add reactive sequence to fluent tree builder ([77ed042](https://github.com/d2ts/ts-fluent-bt/commit/77ed0427f1cda51f52a119b4da2d2c23804804f0))
+* **composites:** added reactive sequence composite ([c77d4fd](https://github.com/d2ts/ts-fluent-bt/commit/c77d4fdbd19a9aa6306261f2cf9adb027a817c06))
+
 # [1.10.0](https://github.com/d2ts/ts-fluent-bt/compare/v1.9.0...v1.10.0) (2020-07-19)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "@d2ts/ts-fluent-bt",
-  "version": "1.10.0",
+  "version": "1.11.0",
   "description": "Fluent TypeScript behaviour tree library.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
