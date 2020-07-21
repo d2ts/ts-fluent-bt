@@ -2,6 +2,7 @@ import ParentNode from '@/parent-node'
 import {Node} from '@/node'
 import {
   PrioritySelector,
+  ReactiveSequence,
   SelectorComposite,
   SequenceComposite,
 } from '@/composites'
@@ -44,16 +45,20 @@ export class FluentBehaviourTreeBuilder<T> {
     return this.registerParent(new SequenceComposite())
   }
 
+  public reactiveSequence(): FluentBehaviourTreeBuilder<T> {
+    return this.registerParent(new ReactiveSequence())
+  }
+
   public selector(): FluentBehaviourTreeBuilder<T> {
     return this.registerParent(new SelectorComposite())
   }
 
-  public invert(child: Node<T>): FluentBehaviourTreeBuilder<T> {
-    return this.registerChild(new InverterDecorator(child))
-  }
-
   public prioritySelector(): FluentBehaviourTreeBuilder<T> {
     return this.registerParent(new PrioritySelector())
+  }
+
+  public invert(child: Node<T>): FluentBehaviourTreeBuilder<T> {
+    return this.registerChild(new InverterDecorator(child))
   }
 
   public end(): FluentBehaviourTreeBuilder<T> {
