@@ -57,8 +57,11 @@ describe('FluentBehaviourTreeBuilder', () => {
 
   it('should execute a inverter', () => {
     const builder = createBuilder()
-    const actionNode = new ActionLeaf((blackboard) => NodeState.Succeeded)
-    const tree = builder.sequence().invert(actionNode).end().build()
+    const tree = builder
+      .invert()
+      .action((blackboard) => NodeState.Succeeded)
+      .end()
+      .build()
 
     expect(tree.tick(testBlackboard)).toBe(NodeState.Failed)
   })

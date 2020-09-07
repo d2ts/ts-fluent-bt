@@ -12,7 +12,7 @@ import {
   ConditionLeaf,
   ConditionLeafTask,
 } from '@/leafs'
-import {InverterDecorator} from '@/decorators'
+import {TimeoutDecorator, InverterDecorator} from '@/decorators'
 
 export class FluentBehaviourTreeBuilder<T> {
   // Needs to be a union with undefined due to the Array.pop method.
@@ -57,8 +57,23 @@ export class FluentBehaviourTreeBuilder<T> {
     return this.registerParent(new PrioritySelector())
   }
 
-  public invert(child: Node<T>): FluentBehaviourTreeBuilder<T> {
-    return this.registerChild(new InverterDecorator(child))
+  public invert(child?: Node<T>): FluentBehaviourTreeBuilder<T> {
+    if (child) {
+      return this.registerChild(new InverterDecorator(child))
+    }
+
+    return this.registerParent(new InverterDecorator())
+  }
+
+  public timeout(
+    timeoutMs: number,
+    child?: Node<T>
+  ): FluentBehaviourTreeBuilder<T> {
+    if (child) {
+      return this.registerChild(new TimeoutDecorator(timeoutMs, child))
+    }
+
+    return this.registerParent(new TimeoutDecorator(timeoutMs))
   }
 
   public end(): FluentBehaviourTreeBuilder<T> {
