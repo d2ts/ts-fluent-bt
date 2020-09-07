@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.12.0](https://github.com/d2ts/ts-fluent-bt/compare/v1.11.0...v1.12.0) (2020-09-07)
+
+
+### Features
+
+* **decorator:** add timeout decorator ([a8c0813](https://github.com/d2ts/ts-fluent-bt/commit/a8c0813401010faa4c5eee8d18ef96e662fc344b))
+
 # [1.11.0](https://github.com/d2ts/ts-fluent-bt/compare/v1.10.0...v1.11.0) (2020-07-21)
 
 
